@@ -8,3 +8,4 @@
 - 5-print_string: Print string 3times, followed by its first 9characters
 - 6-concat: Print Welcome to Holberton School
 - 7-edges: Cut - Paste
+- 8-concat_edges: Prints string followed by a newline
