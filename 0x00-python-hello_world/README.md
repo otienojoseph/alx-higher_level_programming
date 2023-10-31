@@ -7,3 +7,4 @@
 - 4-print_float: Print float stored in variable with precious of 2 digits
 - 5-print_string: Print string 3times, followed by its first 9characters
 - 6-concat: Print Welcome to Holberton School
+- 7-edges: Cut - Paste
