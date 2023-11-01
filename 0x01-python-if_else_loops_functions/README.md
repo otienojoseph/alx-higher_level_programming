@@ -5,3 +5,4 @@ or negative
 - 1-last_digit: Get the last digit and check if less than 6, greater than 5 or 0
 - 2-print_alphabet: Print ASCII alphabet
 - 3-print_alphabet: Print ASCII alphabet except q and e
+- 4-print_hexa: Print 0 - 98 in decimal and hexadecimal
