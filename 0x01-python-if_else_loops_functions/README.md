@@ -11,3 +11,4 @@ or negative
 - 7-islower: Function that checks lowercase character
 - 8-uppercase: Function that prints string in uppercase followed by newline
 - 9-print_last_digit: Function that prints the last digit of a number
+- 10-add: Add two integers and return result
