@@ -3,14 +3,15 @@
 from sys import argv
 
 if __name__ == "__main__":
-    arg_len = len(argv)
+    args = argv[1:]
+    arg_len = len(args)
 
-    if arg_len < 2:
+    if arg_len == 0:
         print("0 arguments.")
-    elif arg_len == 2:
+    elif arg_len == 1:
         print("1 argument.")
     else:
-        print("{} arguments:".format(arg_len - 1))
+        print("{} arguments:".format(arg_len))
 
-    for i in range(1, arg_len):
-        print("{}: {}".format(i, argv[i]))
+    for i in range(arg_len):
+        print("{}: {}".format(i, args[i]))
