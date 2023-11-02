@@ -5,3 +5,4 @@
 - 2-args: Prints the number of and list of its arguments
 - 3-infinite_add: Program that prints the result of the addition of all arguments
 - 5-variable_load: Import variable name and print its value
+- 4-hidden_discovery: Print all names defined by the compiled module
