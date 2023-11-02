@@ -12,3 +12,4 @@ or negative
 - 8-uppercase: Function that prints string in uppercase followed by newline
 - 9-print_last_digit: Function that prints the last digit of a number
 - 10-add: Add two integers and return result
+- 11-pow: Function that computes a to the power of b and returns the value
