@@ -4,3 +4,4 @@
 - 1-calculation: Import functions from calculator_1.py file and do some calculations
 - 2-args: Prints the number of and list of its arguments
 - 3-infinite_add: Program that prints the result of the addition of all arguments
+- 5-variable_load: Import variable name and print its value
