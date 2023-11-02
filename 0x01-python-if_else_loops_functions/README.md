@@ -6,3 +6,4 @@ or negative
 - 2-print_alphabet: Print ASCII alphabet
 - 3-print_alphabet: Print ASCII alphabet except q and e
 - 4-print_hexa: Print 0 - 98 in decimal and hexadecimal
+- 5-print_comb2: Print numbers from 0 to 99
