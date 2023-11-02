@@ -9,3 +9,4 @@ or negative
 - 5-print_comb2: Print numbers from 0 to 99
 - 6-print_comb3: Print all possible different combinations of two digits
 - 7-islower: Function that checks lowercase character
+- 8-uppercase: Function that prints string in uppercase followed by newline
