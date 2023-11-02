@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 
-from sys import argv 
+from sys import argv
 
 if __name__ == "__main__":
     arg_len = len(argv)
-    
+
     if arg_len < 2:
         print("0 arguments.")
     elif arg_len == 2:
