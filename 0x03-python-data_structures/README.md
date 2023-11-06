@@ -5,3 +5,4 @@
 - 2-replace_in_list: Replace an element of a list in a specific position
 - 3-print_reversed_list_integer: Prints all integers of a list
 - 4-new_in_list: Replaces an element without modifying the original list
+- 5-no_c: Function that removes all characters 'c' and 'C'
