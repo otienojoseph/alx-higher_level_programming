@@ -12,3 +12,4 @@
 - 9-max_integer: Function that finds biggest integer of a list
 - 10-divisible_by_2: Function that finds multiples of 2
 - 11-delete_at: Function that deletes the item at a specific position in a list
+- 12-switch: Switch value of a and b
