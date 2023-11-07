@@ -9,3 +9,4 @@
 - 6-print_matrix_integer: Prints a matrix of integers
 - 7-add_tuple: Function that adds 2 tuples together
 - 8-multiple_returns: Function that returns a tuple with the length of string and first character
+- 9-max_integer: Function that finds biggest integer of a list
