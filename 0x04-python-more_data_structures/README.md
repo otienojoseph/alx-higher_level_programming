@@ -9,3 +9,4 @@
 - 6-print_sorted_dictionary: Function that prints a dictionary by ordered keys
 - 7-update_dictionary: Function that replaces or adds key/value in dictionary
 - 8-simple_delete: Function that deletes a key in a dictionary
+- 9-multiply_by_2: Function that returns new dictionary with all values multiplied by 2
