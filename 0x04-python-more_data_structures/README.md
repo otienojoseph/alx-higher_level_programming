@@ -11,3 +11,4 @@
 - 8-simple_delete: Function that deletes a key in a dictionary
 - 9-multiply_by_2: Function that returns new dictionary with all values multiplied by 2
 - 10-best_score: Function that returns a key with the biggest integer value
+- 11-multiply_list_map: Returns a list with values multiplied by a number
