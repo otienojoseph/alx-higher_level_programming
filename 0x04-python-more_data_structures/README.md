@@ -8,3 +8,4 @@
 - 5-number_keys: Function that returns number of keys in a dictionary
 - 6-print_sorted_dictionary: Function that prints a dictionary by ordered keys
 - 7-update_dictionary: Function that replaces or adds key/value in dictionary
+- 8-simple_delete: Function that deletes a key in a dictionary
