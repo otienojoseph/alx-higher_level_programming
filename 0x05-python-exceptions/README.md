@@ -4,3 +4,4 @@
 - 2-safe_print_list_integers: Print the first x elements of a list and only integers
 - 3-safe_print_division: Function that divides 2 integers and prints the result
 - 4-list_division: Function that divides element by element in 2 lists
+- 5-raise_exception: Raise exception
