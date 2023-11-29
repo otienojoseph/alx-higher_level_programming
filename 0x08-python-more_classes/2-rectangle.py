@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Rectangle Module"""
+"""Rectangle Class"""
 
 
 class Rectangle:
@@ -37,7 +37,7 @@ class Rectangle:
     @property
     def height(self):
         """Return height of rect"""
-        return self.height
+        return self.__height
 
     @height.setter
     def height(self, value):
