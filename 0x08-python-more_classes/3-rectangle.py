@@ -67,11 +67,13 @@ class Rectangle:
         else:
             return 2 * (self.__width + self.__height)
 
-    def str(self):
+    def __str__(self):
         """Print rectangle using '#'"""
         if self.__width == 0 or self.__height == 0:
-            return
+            return ""
         else:
-            for i in range(self.__width):
-                for j in range(self.__height):
-                    return [i][j] = '#'
+            rect_str = ""
+            for i in range(self.__height):
+                rect_str += "#" * self.__width + "\n"
+
+            return rect_str
