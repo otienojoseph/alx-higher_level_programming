@@ -3,3 +3,4 @@
 - 1-rectangle: Defines a rectangle with private instance attributes
 - 2-rectangle: Calculate area and perimeter of rectangle
 - 3-rectangle: print() and str() should print the rectangle with character '#'
+- 4-rectangle: repr() should return a string representation of the rectangle to be able to recreate a new instance by using eval()
