@@ -6,3 +6,4 @@
 - 4-rectangle: repr() should return a string representation of the rectangle to be able to recreate a new instance by using eval()
 - 5-rectangle: Print the message Bye rectangle... (... being 3 dots not ellipsis) when an instance of Rectangle is deleted
 - 6-rectangle: Instanciate class attribute and increment by 1 or reduce by 1 when deleted
+- 7-rectangle: Add a public class attribute 'print_symbol' instanciated with '#'
