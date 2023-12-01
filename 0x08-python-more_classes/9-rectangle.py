@@ -127,9 +127,4 @@ class Rectangle:
             Attributes:
                 size (int): new width and height
         """
-        if not isinstance(size, int):
-            raise TypeError("must be an integer")
-        elif size < 0:
-            raise ValueError("width must be >= 0")
-        else:
-            return cls(width=size, height=size)
+        return cls(width=size, height=size)
