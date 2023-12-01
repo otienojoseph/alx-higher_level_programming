@@ -8,3 +8,4 @@
 - 6-rectangle: Instanciate class attribute and increment by 1 or reduce by 1 when deleted
 - 7-rectangle: Add a public class attribute 'print_symbol' instanciated with '#'
 - 8-rectangle: Add static method that returns the biggest rectangle based on the area
+- 9-rectangle: Add class method that returns a new Rectangle instance with width == height == size
