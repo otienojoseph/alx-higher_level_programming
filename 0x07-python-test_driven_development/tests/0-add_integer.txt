@@ -1,0 +1,48 @@
+# doctest_add_integer.txt
+
+=============================================
+Function that returns the sum of two integers
+=============================================
+
+>>> import importlib
+>>> module_name = importlib.import_module('0-add_integer')
+
+Numbers
+=======
+
+``add_integer()`` returns the sum of two integer arguments
+::
+ 
+>>> module_name.add_integer(1, 2)
+3
+
+>>> module_name.add_integer(100, -2)
+98
+
+It also works with floating point numbers
+
+>>> module_name.add_integer(100.3, -2)
+98
+
+Non-numbers
+============
+::
+
+>>> module_name.add_integer(4, "School")
+Traceback (most recent call last):
+TypeError: b must be an integer
+
+>>> module_name.add_integer("School", 5)
+Traceback (most recent call last):
+TypeError: a must be an integer
+
+>>> module_name.add_integer("School", "School")
+Traceback (most recent call last):
+TypeError: a must be an integer
+
+Empty Calls
+============
+
+>>> module_name.add_integer()
+Traceback (most recent call last):
+TypeError: add_integer() missing 1 required positional argument: 'a'
