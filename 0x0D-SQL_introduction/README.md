@@ -4,3 +4,4 @@
 - 2-remove_database - Delete database
 - 3-list_tables - List all tables in your database
 - 4-first_table - Creates a table called first_table in the passed database
+- 5-full_table - Prints full description of the table first_table
