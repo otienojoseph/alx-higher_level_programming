@@ -13,3 +13,4 @@
 - 11-best_score - Lists all records with a score >= 10
 - 12-no_cheating - Updates the score of Bob to 10
 - 13-change_class - Removes all records with a score <= 5 from table
+14-average - Computes the average of all records in the table
