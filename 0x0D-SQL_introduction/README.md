@@ -15,3 +15,4 @@
 - 13-change_class - Removes all records with a score <= 5 from table
 14-average - Computes the average of all records in the table
 - 15-group - List the number of records with the same score in table
+16-no_link - Lists all records of the table
