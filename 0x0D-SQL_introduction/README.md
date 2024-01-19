@@ -10,3 +10,4 @@
 - 8-count_89 - Displays the number of records with id = 89
 - full_creation - Create a table second_table in the database
 - 10-top_score - List all records of the table
+- 11-best_score - Lists all records with a score >= 10
