@@ -6,3 +6,4 @@
 - 4-first_table - Creates a table called first_table in the passed database
 - 5-full_table - Prints full description of the table first_table
 -6-list_values - List all rows of a table
+-7-insert_value - Insert a new row on table
