@@ -7,3 +7,4 @@
 - 5-full_table - Prints full description of the table first_table
 -6-list_values - List all rows of a table
 -7-insert_value - Insert a new row on table
+- 8-count_89 - Displays the number of records with id = 89
