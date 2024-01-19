@@ -8,3 +8,4 @@
 -6-list_values - List all rows of a table
 -7-insert_value - Insert a new row on table
 - 8-count_89 - Displays the number of records with id = 89
+- full_creation - Create a table second_table in the database
