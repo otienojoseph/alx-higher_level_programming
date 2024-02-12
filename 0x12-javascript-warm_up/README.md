@@ -9,3 +9,4 @@
 - 7-multi_c - Prints 'C is fun' x times
 - 8-square - Script that prints a square
 - 9-add - Script that prints the addition of 2 integers
+- 10-factorial - Script that prints a factorial
