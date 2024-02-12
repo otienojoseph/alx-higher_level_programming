@@ -6,7 +6,7 @@ if (argCount) {
   for (let i = 0; i < argCount; i++) {
     let line = '';
     for (let j = 0; j < argCount; j++) {
-      line += 'x';
+      line += 'X';
     }
     console.log(line);
   }
