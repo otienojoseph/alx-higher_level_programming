@@ -11,3 +11,4 @@
 - 9-add - Script that prints the addition of 2 integers
 - 10-factorial - Script that prints a factorial
 - 13-add - Function that returns the addition of 2 integers
+- 12-object - Script to replace the value 12 with 89
