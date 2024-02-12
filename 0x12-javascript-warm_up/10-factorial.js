@@ -9,7 +9,7 @@ function factorial (n) {
   return n * factorial(n - 1);
 }
 
-if (!arg) {
+if (isNaN(arg)) {
   console.log(NaN);
 } else {
   console.log(factorial(arg));
