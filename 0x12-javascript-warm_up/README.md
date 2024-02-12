@@ -4,3 +4,4 @@
 - 2-arguments - Script that prints a message depending of the number of arguments passed
 - 3-value_argument - Prints the first argument passed to it
 - 4-concat - Prints two arguments passed to it
+- 5-to_integer - Scripts that converts first argument to an int then print it
