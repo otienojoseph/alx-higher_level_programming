@@ -7,3 +7,4 @@
 - 5-square - Class square that inherits from rectangle class
 - 6-square - Square that defines a square and inherits  from Square from 5-square
 - 7-occurences - Function that returns the number of occurences in a list
+- 8-esrever - Function that returns the reversed version of a string
