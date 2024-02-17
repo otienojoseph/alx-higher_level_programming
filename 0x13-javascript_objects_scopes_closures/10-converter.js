@@ -2,13 +2,13 @@
 
 exports.converter = function (base) {
   if (base < 2 || base > 36) {
-    return 'Invalid choice';
+    return "Invalid choice";
   }
 
   return function (number) {
-    this.result = '';
+    this.result = "";
     while (number > 0) {
-      this.result = (number % base).toString(base).toUpperCase() + this.result;
+      this.result = (number % base).toString(base) + this.result;
       number = Math.floor(number / base);
     }
 
