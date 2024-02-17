@@ -5,15 +5,13 @@ exports.converter = function (base) {
     return 'Invalid choice';
   }
 
-  function baseConverter (number) {
-    let result = '';
+  return function (number) {
+    this.result = '';
     while (number > 0) {
-      const remainder = number % base;
-      result = remainder.toString(base).toUpperCase() + result;
+      this.result = (number % base).toString(base).toUpperCase() + this.result;
       number = Math.floor(number / base);
     }
 
-    return result || 'O';
-  }
-  return baseConverter;
+    return this.result;
+  };
 };
