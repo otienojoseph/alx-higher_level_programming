@@ -9,3 +9,4 @@
 - 7-occurences - Function that returns the number of occurences in a list
 - 8-esrever - Function that returns the reversed version of a string
 - 9-logme - Function that prints the number of arguments already printed and the new argument value
+- 10-converter - Function that converts a number from base 10 to another base passed as argument
