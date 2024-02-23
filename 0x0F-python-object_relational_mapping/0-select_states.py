@@ -1,9 +1,16 @@
 #!/usr/bin/python3
-import MySQLdb
-import sys
 
-def listStates():
-    [username, password, db_name] = sys.argv[1:]
+"""
+    A script that lists all states from a database hbtn_0e_0_usa
+    username, password and database are given as args.
+"""
+
+import sys
+import MySQLdb
+
+
+def listStates(username, password, db_name):
+    db = cur = None
     try:
         db = MySQLdb.connect(user=username, passwd=password, db=db_name)
         # print("Connection successful")
@@ -20,10 +27,15 @@ def listStates():
         print("Error connecting to the MySQL database: ", e)
 
     finally:
-        if 'db' in locals():
+        if cur:
             cur.close()
+        if db:
             db.close()
 
 
 if __name__ == "__main__":
-    listStates()
+    try:
+        [username, password, db_name] = sys.argv[1:]
+        listStates(username, password, db_name)
+    except ValueError as e:
+        print("Usage: <function-name> user password db_name")
