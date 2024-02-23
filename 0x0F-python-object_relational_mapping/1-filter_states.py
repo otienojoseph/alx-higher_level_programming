@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 """
-    A script that lists all states with a name starting with 'N' from a 
+    A script that lists all states with a name starting with 'N' from a
     database hbtn_0e_0_usa username, password and database are given as args.
 """
 
@@ -17,7 +17,8 @@ def listStates(username, password, db_name):
 
         cur = db.cursor()
         cur.execute("USE %s" % db_name)
-        cur.execute("SELECT * FROM states WHERE states.name LIKE 'N%' ORDER BY states.id ASC")
+        cur.execute("SELECT * FROM states WHERE states.name LIKE 'N%' \
+            ORDER BY states.id ASC")
         states = cur.fetchall()
 
         for state in states:
