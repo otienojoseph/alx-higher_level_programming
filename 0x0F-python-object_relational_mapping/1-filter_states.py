@@ -17,7 +17,7 @@ def listStates(username, password, db_name):
 
         cur = db.cursor()
         cur.execute("USE %s" % db_name)
-        cur.execute("SELECT * FROM states WHERE states.name LIKE 'N%'")
+        cur.execute("SELECT * FROM states WHERE states.name LIKE 'N%' ORDER BY states.id ASC")
         states = cur.fetchall()
 
         for state in states:
