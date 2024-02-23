@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 
 """
-    A script that lists all states with a name starting with 'N' from a
-    database hbtn_0e_0_usa username, password and database are given as args.
+    A script that lists all states with a name starting with
+    capital letter 'N' from a database hbtn_0e_0_usa
+    username, password and database are given as args.
 """
 
 import sys
@@ -13,7 +14,6 @@ def listStates(username, password, db_name):
     db = cur = None
     try:
         db = MySQLdb.connect(user=username, passwd=password, db=db_name)
-        # print("Connection successful")
 
         cur = db.cursor()
         cur.execute("USE %s" % db_name)
