@@ -22,7 +22,7 @@ def listStates(username, password, db_name, state_name):
                     WHERE name LIKE BINARY '{}'
                     ORDER BY id ASC""".format(state_name))
         states = cur.fetchall()
-        
+
         for state in states:
             print(state)
 
