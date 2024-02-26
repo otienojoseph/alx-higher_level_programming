@@ -21,9 +21,10 @@ def listStates(username, password, db_name, state_name):
         cur.execute("""SELECT * FROM states
                     WHERE name LIKE BINARY '{}'
                     ORDER BY id ASC""".format(state_name))
-        state = cur.fetchone()
-
-        print(state)
+        states = cur.fetchall()
+        
+        for state in states:
+            print(state)
 
     except MySQLdb.Error as e:
         print("Error connecting to the MySQL database: ", e)
