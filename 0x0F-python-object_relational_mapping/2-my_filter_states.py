@@ -12,14 +12,14 @@ import MySQLdb
 
 
 def listStates(username, password, db_name, state_name):
-    db = cur = None
+    db = cur = ""
     try:
         db = MySQLdb.connect(user=username, passwd=password, db=db_name)
 
         cur = db.cursor()
         cur.execute("USE {}".format(db_name))
         cur.execute("""SELECT * FROM states
-                    WHERE name = '{}'
+                    WHERE name LIKE BINARY '{}'
                     ORDER BY id ASC""".format(state_name))
         state = cur.fetchone()
 
