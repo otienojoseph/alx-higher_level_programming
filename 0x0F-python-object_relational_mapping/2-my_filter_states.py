@@ -4,7 +4,7 @@
     A script that takes a list of arguments and displays all values
     in the states table of hbtn_0e_0_usa
     where name matches the argument
-    username, password, database and state name are given as args.
+    username, password, database and state_name are given as args.
 """
 
 import sys
@@ -17,10 +17,10 @@ def listStates(username, password, db_name, state_name):
         db = MySQLdb.connect(user=username, passwd=password, db=db_name)
 
         cur = db.cursor()
-        cur.execute("USE %s" % db_name)
-        cur.execute("SELECT * FROM states \
-            WHERE name = %s \
-            ORDER BY id ASC", (state_name,))
+        cur.execute("USE {}".format(db_name))
+        cur.execute("""SELECT * FROM states
+                    WHERE name = '{}'
+                    ORDER BY id ASC""".format(state_name))
         state = cur.fetchone()
 
         print(state)
