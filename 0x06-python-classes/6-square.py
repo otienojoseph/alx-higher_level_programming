@@ -95,11 +95,14 @@ class Square:
             print()
 
         try:
-            for _ in range(self.__position[1]):
-                print()
+            if (isinstance(self.__position[0], int) and isinstance(self.__position[1], int)):
+                for _ in range(self.__position[1]):
+                    print()
 
-            for _ in range(self.__size):
-                print(" " * self.__position[0], end="")
-                print("#" * self.__size)
-        except (TypeError, IndexError):
+                for _ in range(self.__size):
+                    print(" " * self.__position[0], end="")
+                    print("#" * self.__size)
+            else:
+                print("position must be a tuple of 2 positive integers")
+        except (IndexError, ValueError, TypeError):
             print("position must be a tuple of 2 positive integers")
