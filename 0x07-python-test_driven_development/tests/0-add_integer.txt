@@ -26,6 +26,9 @@ It also works with floating point numbers
 >>> module_name.add_integer(-20)
 78
 
+>>> module_name.add_integer(-10, 6)
+-4
+
 Non-numbers
 ============
 
@@ -35,17 +38,26 @@ TypeError: b must be an integer
 
 >>> module_name.add_integer("School", 5)
 Traceback (most recent call last):
+    ...
 TypeError: a must be an integer
 
 >>> module_name.add_integer("School", "School")
 Traceback (most recent call last):
+    ...
 TypeError: a must be an integer
+
+>>> value = float('NaN')
+>>> module_name.add_integer(value)
+Traceback (most recent call last):
+    ...
+ValueError: cannot convert float NaN to integer
 
 Empty Calls
 ============
 
 >>> module_name.add_integer()
 Traceback (most recent call last):
+    ...
 TypeError: add_integer() missing 1 required positional argument: 'a'
 
 Check for float overflows
