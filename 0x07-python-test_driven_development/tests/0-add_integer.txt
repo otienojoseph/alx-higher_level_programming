@@ -11,7 +11,6 @@ Numbers
 =======
 
 ``add_integer()`` returns the sum of two integer arguments
-::
  
 >>> module_name.add_integer(1, 2)
 3
@@ -24,9 +23,11 @@ It also works with floating point numbers
 >>> module_name.add_integer(100.3, -2)
 98
 
+>>> module_name.add_integer(-20)
+78
+
 Non-numbers
 ============
-::
 
 >>> module_name.add_integer(4, "School")
 Traceback (most recent call last):
@@ -46,3 +47,9 @@ Empty Calls
 >>> module_name.add_integer()
 Traceback (most recent call last):
 TypeError: add_integer() missing 1 required positional argument: 'a'
+
+Check for float overflows
+===========================
+
+>>> module_name.add_integer(1500.5)
+1598
