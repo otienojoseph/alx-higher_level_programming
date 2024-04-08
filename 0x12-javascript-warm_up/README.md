@@ -7,3 +7,4 @@
 - 4-concat - Script that prints two arguments passed to it in the format arg 'is' arg
 - 5-to_integer - Script that prints 'My number: <first argument converted in integer>'
 - 6-multi_languages_loop - Script that prints 3lines using loop
+- 7-multi_c - Script that prints x times 'C is fun'
