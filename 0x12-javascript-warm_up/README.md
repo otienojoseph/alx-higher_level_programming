@@ -12,3 +12,4 @@
 - 9-add - Prints the addition of 2 integers
 - 10-factorial - Script that computes the factorial of a number
 - 11-second_biggest - Script that searches the second biggest integer in the list of arguments
+- 12-object - Script to modify object value to 89
