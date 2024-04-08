@@ -8,16 +8,22 @@ function secondBiggest (a) {
     return 0;
   }
 
+  // Optimized version
+  // let sortedArr = a.toSorted((a, b) => a - b);
+  // return sortedArr.at(-2)
+
+  // manual iteration
   let temp;
-  // manual, can be optimized
-  for (let i = 0; i < a.length; i++) {
-    for (let j = 0; j < a.length; j++) {
-      if (j > i) {
-        temp = j;
+  for (let i = 0; i < a.length - 1; i++) {
+    for (let j = 0; j < a.length - 1 - i; j++) {
+      if (a[j] > a[j + 1]) {
+        temp = a[j];
+        a[j] = a[j + 1];
+        a[j + 1] = temp;
       }
     }
   }
-  return a[temp - 1];
+  return a.at(-2);
 }
 
 console.log(secondBiggest(argsInt));
