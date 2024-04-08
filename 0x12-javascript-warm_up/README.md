@@ -9,3 +9,4 @@
 - 6-multi_languages_loop - Script that prints 3lines using loop
 - 7-multi_c - Script that prints x times 'C is fun'
 - 8-square - Script that prints a square
+- 9-add - Prints the addition of 2 integers
