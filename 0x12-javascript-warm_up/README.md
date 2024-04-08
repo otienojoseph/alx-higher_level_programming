@@ -14,3 +14,4 @@
 - 11-second_biggest - Script that searches the second biggest integer in the list of arguments
 - 12-object - Script to modify object value to 89
 - 13-add - External function that returns the sum of numbers
+- 100-let_me_const - Changes the value of 'myVar' after being imported
