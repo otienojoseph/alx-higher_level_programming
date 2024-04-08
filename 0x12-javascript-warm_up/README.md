@@ -6,3 +6,4 @@
 - 3-value_argument - Script to print the first argument passed
 - 4-concat - Script that prints two arguments passed to it in the format arg 'is' arg
 - 5-to_integer - Script that prints 'My number: <first argument converted in integer>'
+- 6-multi_languages_loop - Script that prints 3lines using loop
