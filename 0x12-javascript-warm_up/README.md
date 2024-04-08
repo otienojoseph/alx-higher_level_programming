@@ -8,3 +8,4 @@
 - 5-to_integer - Script that prints 'My number: <first argument converted in integer>'
 - 6-multi_languages_loop - Script that prints 3lines using loop
 - 7-multi_c - Script that prints x times 'C is fun'
+- 8-square - Script that prints a square
