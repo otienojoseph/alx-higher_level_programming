@@ -15,3 +15,4 @@
 - 12-object - Script to modify object value to 89
 - 13-add - External function that returns the sum of numbers
 - 100-let_me_const - Changes the value of 'myVar' after being imported
+- 101-call_me_moby - External function that is executed 'x' times according to parameter
