@@ -4,3 +4,4 @@
 - 1-multi_languages - Script that writes 3 lines using console log
 - 2-arguments - Prints a message depending on the number of arguments passed
 - 3-value_argument - Script to print the first argument passed
+- 4-concat - Script that prints two arguments passed to it in the format arg 'is' arg
