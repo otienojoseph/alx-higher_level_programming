@@ -17,3 +17,4 @@
 - 100-let_me_const - Changes the value of 'myVar' after being imported
 - 101-call_me_moby - External function that is executed 'x' times according to parameter
 - 102-add_me_maybe - Function that increments and calls a function
+- 103-object_fact - Function that increments a value
