@@ -5,3 +5,4 @@
 - 2-rectangle - If 'w' or 'h' is equal to 0 or not a positive integer create an empty object
 - 3-rectangle - Add an instance method 'print' that prints the rectangle using the character 'X'
 - 4-rectangle - Add method 'rotate' that exchanges the values of width and height and 'double' that multiplies the width and height by 2
+- 5-square - Defines a square and inherits from Rectangle
