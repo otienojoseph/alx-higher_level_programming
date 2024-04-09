@@ -7,3 +7,4 @@
 - 4-rectangle - Add method 'rotate' that exchanges the values of width and height and 'double' that multiplies the width and height by 2
 - 5-square - Defines a square and inherits from Rectangle
 - 6-square - Defines a square that inherits from Square of 5-square
+- 7-occurrences - Return the number of occurrences in a list
