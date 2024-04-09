@@ -10,3 +10,4 @@
 - 7-occurrences - Return the number of occurrences in a list
 - 8-esrever - Reverse version of a list
 - 9-logme - Prints the <number of argument printed>: <current argument>
+- 10-converter - Converts number from base 10 to provided base
