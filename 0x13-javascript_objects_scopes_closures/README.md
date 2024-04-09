@@ -9,3 +9,4 @@
 - 6-square - Defines a square that inherits from Square of 5-square
 - 7-occurrences - Return the number of occurrences in a list
 - 8-esrever - Reverse version of a list
+- 9-logme - Prints the <number of argument printed>: <current argument>
