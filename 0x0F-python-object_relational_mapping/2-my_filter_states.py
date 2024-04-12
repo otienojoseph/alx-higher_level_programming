@@ -6,6 +6,7 @@ import MySQLdb
 
 
 def listStates(user_name, password, db_name, state):
+    """Script that returns all states whose names match state"""
     db = MySQLdb.connect(user=user_name, passwd=password, db=db_name)
     cur = db.cursor()
     query = """
