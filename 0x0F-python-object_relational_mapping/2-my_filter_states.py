@@ -10,11 +10,14 @@ def listStates(user_name, password, db_name, state):
     db = MySQLdb.connect(user=user_name, passwd=password, db=db_name)
     cur = db.cursor()
     query = """
-        SELECT * FROM states
-        WHERE name = %s
-        ORDER BY id ASC
-    """
-    cur.execute(query, (state,))
+    SELECT * FROM states
+    WHERE name = '{}'
+    ORDER BY id ASC
+    """.format(
+        state
+    )
+
+    cur.execute(query)
     state_rows = cur.fetchall()
 
     for state in state_rows:
