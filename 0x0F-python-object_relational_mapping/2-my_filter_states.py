@@ -11,7 +11,7 @@ def listStates(user_name, password, db_name, state):
     cur = db.cursor()
     query = """
     SELECT * FROM states
-    WHERE name = '{}'
+    WHERE name LIKE BINARY '{}'
     ORDER BY id ASC
     """.format(
         state
@@ -22,6 +22,9 @@ def listStates(user_name, password, db_name, state):
 
     for state in state_rows:
         print(state)
+
+    cur.close()
+    db.close()
 
 
 if __name__ == "__main__":
