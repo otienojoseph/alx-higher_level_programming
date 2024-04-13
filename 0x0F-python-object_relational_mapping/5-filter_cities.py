@@ -11,7 +11,7 @@ def listCities(user_name, password, db_name, state_name):
     query = """
     SELECT cities.name
     FROM cities
-    LEFT JOIN states ON states.id = cities.state_id 
+    LEFT JOIN states ON cities.state_id = states.id
     WHERE states.name LIKE BINARY %s
     ORDER BY cities.id ASC
     """
