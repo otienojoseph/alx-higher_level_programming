@@ -13,16 +13,14 @@ def listCities(user_name, password, db_name, state_name):
         SELECT cities.name
         FROM cities
         INNER JOIN states ON cities.state_id = states.id
-        WHERE states.name LIKE BINARY %s
+        WHERE states.name = %s
         ORDER BY cities.id ASC
         """
 
         cur.execute(query, (state_name,))
-        state_rows = cur.fetchall()
+        city_rows = cur.fetchall()
 
-        for state in state_rows:
-            print("".join(state), end=" ")
-        print()
+        print(", ".join([city[0] for city in city_rows]))
 
         cur.close()
         db.close()
@@ -34,5 +32,6 @@ def listCities(user_name, password, db_name, state_name):
 if __name__ == "__main__":
     if len(sys.argv) != 5:
         print("Usage: python script.py <username> <password> <db name> <state name>")
+
     [user_name, password, db_name, state_name] = sys.argv[1:]
     listCities(user_name, password, db_name, state_name)
