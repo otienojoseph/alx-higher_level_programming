@@ -5,3 +5,4 @@
 - 2-my_filter_states - Takes in an argument and returns all values in 'states' table where 'name' matches the argument
 - 3-my_safe_filter_states - Lists all states where name matches the argument but make it sql injection safe
 - 4-cities_by_state - Lists all cities in database
+- 5-filter_cities - Takes a state name argument and returns all cities in that state
