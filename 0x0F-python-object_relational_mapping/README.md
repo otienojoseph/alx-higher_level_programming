@@ -6,3 +6,4 @@
 - 3-my_safe_filter_states - Lists all states where name matches the argument but make it sql injection safe
 - 4-cities_by_state - Lists all cities in database
 - 5-filter_cities - Takes a state name argument and returns all cities in that state
+- model_state - Write a python file that contains the class definition of a State and an instance Base = declarative_base():
