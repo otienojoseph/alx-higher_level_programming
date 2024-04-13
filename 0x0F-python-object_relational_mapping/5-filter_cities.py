@@ -31,7 +31,10 @@ def listCities(user_name, password, db_name, state_name):
 
 if __name__ == "__main__":
     if len(sys.argv) != 5:
-        print("Usage: python script.py <username> <password> <db name> <state name>")
+        print(
+            "Usage: python script.py <username> \
+        <password> <db name> <state name>"
+        )
 
     [user_name, password, db_name, state_name] = sys.argv[1:]
     listCities(user_name, password, db_name, state_name)
