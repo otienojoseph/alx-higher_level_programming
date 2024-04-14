@@ -13,3 +13,4 @@
 - 10-model_state_my_get - Print State objects with the name passed as argument
 - 11-model_state_insert - Adds the State object "Lousiana" to the database hbtn_0e_6_usa
 - 12-model_state_update_id_2 - Script that updates the name of a State object from database hbtn_0e_6_usa
+- 13-model_state_delete_a - Deletes all State objects with a name containing the letter 'a' from database hbtn_0e_6_usa
