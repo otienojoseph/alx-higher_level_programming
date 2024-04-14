@@ -11,3 +11,4 @@
 - 8-model_state_fetch_first - Prints the first State object from the database hbtn_0e_6_usa
 - 9-model_state_filter_a - Print all State objects that contain the letter 'a' from the database hbtn_0e_6_usa
 - 10-model_state_my_get - Print State objects with the name passed as argument
+- 11-model_state_insert - Adds the State object "Lousiana" to the database hbtn_0e_6_usa
