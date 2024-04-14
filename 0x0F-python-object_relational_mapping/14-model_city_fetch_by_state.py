@@ -24,7 +24,7 @@ def listStates(user, password, db):
     session = Session()
 
     # extract all states cities
-    cities = session.query(State, City).filter(State.id == City.id)
+    cities = session.query(State, City).filter(State.id == City.state_id)
 
     # print all cities 
     for city in cities:
