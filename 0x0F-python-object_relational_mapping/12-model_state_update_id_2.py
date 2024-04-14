@@ -23,12 +23,12 @@ def listStates(user, password, db):
     # create a session
     session = Session()
 
-    # add State
-    state = State(name="Louisiana")
-    session.add(state)
-    session.commit()
+    # update State
+    updatedState = session.get(State, 2)
+    updatedState.name = "New Mexico"
 
-    print(state.id)
+    session.add(updatedState)
+    session.commit()
 
     session.close()
 
