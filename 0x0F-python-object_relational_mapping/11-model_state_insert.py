@@ -5,6 +5,8 @@
 
 
 import sys
+
+from sqlalchemy.exc import MultipleResultsFound
 from model_state import Base, State
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy import create_engine
@@ -27,10 +29,7 @@ def listStates(user, password, db):
     session.add(state)
     session.commit()
 
-    filteredStates = session.query(State).order_by(State.id).all()
-
-    for state in filteredStates:
-        print("{}: {}".format(state.id, state.name))
+    print(state.id)
 
     session.close()
 
