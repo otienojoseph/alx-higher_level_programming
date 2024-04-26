@@ -4,3 +4,4 @@
 - 2-delete - Script that sends a delete request to the URL passed
 3-methods - Script that returns the available HTTP methods the server will accept
 4-header - Script that requests a URL and sends a header variable with values
+5-post_params - Script that takes in URL and POST's a request to it
