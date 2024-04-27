@@ -27,6 +27,7 @@ def sort_func(int_list):
 
 
 def find_peak(list_of_integers):
+    """Find peak of an integer list and return it"""
     if list_of_integers == []:
         return
 
