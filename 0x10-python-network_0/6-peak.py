@@ -1,6 +1,32 @@
 #!/usr/bin/python3
 """Function that returns peak in a list or unsorted integers"""
 
+def merge_func(int_list, lb, mid, ub):
+    """Merge the sorted sub lists"""
+    i = lb, j = mid + 1, k = lb, arr = []
+    while (i <= mid && j <= ub):
+        if (int_list[i] < int_list[j]):
+            arr[k] = int_list[i]
+            i++
+        else:
+            arr[k] = int_list[j]
+            j++
+        k++
+
+    if (i > mid):
+        while (j <= ub):
+            arr[k] = int_list[j]
+            j++
+            k++
+    else:
+        while (i <= mid):
+            arr[k] = int_list[i]
+            i++
+            k++
+    for i in range(len(int_list)):
+        int_list[i] = arr[i]
+
+    return int_list
 
 def sort_func(int_list):
     """
@@ -11,20 +37,14 @@ def sort_func(int_list):
 
     Return: Sorted integer list
     """
-    list_len = len(int_list)
+    lb = 0
+    ub = len(int_list)
 
-    for i in range(list_len):
-        swapped = False
-
-        for j in range(0, list_len - i - 1):
-            if int_list[j] > int_list[j + 1]:
-                int_list[j], int_list[j + 1] = int_list[j + 1], int_list[j]
-                swapped = True
-        if swapped == False:
-            break
-
-    return int_list
-
+    if (lb < ub):
+        mid = (lb + ub) // 2
+        sort_func(int_list, lb, mid)
+        sort_func(int_list, mid + 1, ub)
+        merge_func(int_list, lb, mid, ub)
 
 def find_peak(list_of_integers):
     """Find peak of an integer list and return it"""
