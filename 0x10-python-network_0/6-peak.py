@@ -1,6 +1,7 @@
 #!/us/bin/python3
 """Script that finds peak of integer array list"""
 
+
 def find_peak(list_of_integers):
     if len(list_of_integers) < 1:
         return None
@@ -10,12 +11,12 @@ def find_peak(list_of_integers):
     high = len(list_of_integers) - 1
 
     while low < high:
-        middle = (low + high) //2
+        middle = (low + high) // 2
 
         # check if middle is peak
         if list_of_integers[middle] >= list_of_integers[middle + 1]:
             # if middle is greater or equal to middle + 1 which is on
-            # the right side, then peak could be on the lefthalf of 
+            # the right side, then peak could be on the lefthalf of
             # the array
             high = middle
         else:
