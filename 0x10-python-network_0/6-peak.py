@@ -3,6 +3,14 @@
 
 
 def find_peak(list_of_integers):
+    """
+    Function that finds peak of a array
+
+    Args:
+        list_of_integers (int[]): list of integers
+
+    Return: Peak of list
+    """
     if len(list_of_integers) < 1:
         return None
 
