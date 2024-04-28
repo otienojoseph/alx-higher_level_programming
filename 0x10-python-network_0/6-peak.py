@@ -1,13 +1,13 @@
-#!/us/bin/python3
+#!/usr/bin/python3
 """Script that finds peak of integer array list"""
 
 
 def find_peak(list_of_integers):
     """
     Function that finds peak of a array
-
+    
     Args:
-        list_of_integers (int[]): list of integers
+        list_of_integers (int[]): list of integers 
 
     Return: Peak of list
     """
