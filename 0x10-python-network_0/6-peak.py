@@ -1,56 +1,62 @@
 #!/usr/bin/python3
 """Function that returns peak in a list or unsorted integers"""
 
-def merge_func(int_list, lb, mid, ub):
-    """Merge the sorted sub lists"""
-    i = lb, j = mid + 1, k = lb, arr = []
-    while (i <= mid && j <= ub):
-        if (int_list[i] < int_list[j]):
-            arr[k] = int_list[i]
-            i++
+def merge_func(lefthalf, righthalf):
+    """
+    Merge sorted sub lists
+    
+    Args:
+        lefthalf (int[]): array of integers
+        righthalf (int[]): array of integers
+    
+    Return: Sorted integer list
+    """
+    i = j = 0
+    result = []
+
+    while (i < len(lefthalf) and j < len(righthalf)):
+        if (lefthalf[i] < righthalf[j]):
+            result.append(lefthalf[i])
+            i += 1
         else:
-            arr[k] = int_list[j]
-            j++
-        k++
+            result.append(righthalf[j])
+            j += 1
 
-    if (i > mid):
-        while (j <= ub):
-            arr[k] = int_list[j]
-            j++
-            k++
-    else:
-        while (i <= mid):
-            arr[k] = int_list[i]
-            i++
-            k++
-    for i in range(len(int_list)):
-        int_list[i] = arr[i]
+    while (i < len(lefthalf)):
+        result.append(lefthalf[i])
+        i += 1
 
-    return int_list
+    while (j < len(righthalf)):
+        result.append(righthalf[j])
+        j += 1
+
+    return result
 
 def sort_func(int_list):
     """
-    Sorting function that returns a sorted list
+    Function that sorts arrays using merge sort algorithm
 
     Args:
         int_list (int) - Integer list
 
     Return: Sorted integer list
     """
-    lb = 0
-    ub = len(int_list)
+    if len(int_list) <= 1:
+        return int_list
 
-    if (lb < ub):
-        mid = (lb + ub) // 2
-        sort_func(int_list, lb, mid)
-        sort_func(int_list, mid + 1, ub)
-        merge_func(int_list, lb, mid, ub)
+    middle = len(int_list) // 2
+
+    lefthalf = sort_func(int_list[:middle])
+    righthalf = sort_func(int_list[middle:])
+    sorted_list = merge_func(lefthalf, righthalf)
+
+    return sorted_list
+
 
 def find_peak(list_of_integers):
     """Find peak of an integer list and return it"""
-    if list_of_integers == []:
+    if (list_of_integers == []):
         return
 
     sorted_list = sort_func(list_of_integers)
-
     return sorted_list[-1]
