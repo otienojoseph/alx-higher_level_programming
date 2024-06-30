@@ -179,3 +179,9 @@
     You are not allowed to import any module
     ```
 
+20. Tuple or not?
+    ```
+    a = ()
+
+    Is a a tuple? Answer with Yes or No.
+    ```
