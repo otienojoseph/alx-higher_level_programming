@@ -207,3 +207,11 @@
     Is a a tuple? Answer with Yes or No.
     ```
 
+24. Who am I?
+    ```
+    What does this script print?
+
+    a = (1)
+    b = (1)
+    a is b
+    ```
