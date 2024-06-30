@@ -224,3 +224,12 @@
     b = (1, 2)
     a is b
     ```
+
+26. Empty is not Empty
+    ```
+    What does this script print?
+
+    a = ()
+    b = ()
+    a is b
+    ```
