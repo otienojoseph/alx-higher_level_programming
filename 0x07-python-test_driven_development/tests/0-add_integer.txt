@@ -67,3 +67,4 @@ Check for float overflows
 Traceback (most recent call last):
     ...
 OverflowError: cannot convert float infinity to integer
+

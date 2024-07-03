@@ -21,18 +21,21 @@ def matrix_divided(matrix, div):
                 - div is 0
     """
     if not matrix:
-        raise TypeError("matrix must be a matrix (list of lists) of integer/floats")
+        raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+
+    if type(div) not in [int, float]:
+        raise TypeError("div must be a number")
     
     result_matrix = []
-    for lists in range(len(matrix)):
+    for list in range(len(matrix)):
         res = []
-        for number in range(len(matrix[lists])):
-            if not isinstance(matrix[lists][number], (int, float)):
-                raise TypeError("matrix must be a matrix (list of lists) of integer/floats")
+        for number in range(len(matrix[list])):
+            if not isinstance(matrix[list][number], (int, float)):
+                raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
             try:
-                result = round(matrix[lists][number] / div, 2)
+                result = round(matrix[list][number] / div, 2)
                 res.append(result)
-            except ZeroDivionError:
+            except ZeroDivisionError:
                 raise ZeroDivisionError("division by zero")
 
         result_matrix.append(res)
