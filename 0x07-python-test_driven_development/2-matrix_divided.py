@@ -33,6 +33,11 @@ def matrix_divided(matrix, div):
 
     result_matrix = []
     for row in range(len(matrix)):
+        if not isinstance(matrix[row], list):
+            raise TypeError(
+                "matrix must be a matrix (list of lists) of"
+                " integers/floats")
+
         res = []
         for number in range(len(matrix[row])):
             if not isinstance(matrix[row][number], (int, float)):
