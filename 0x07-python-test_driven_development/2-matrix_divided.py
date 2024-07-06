@@ -20,9 +20,10 @@ def matrix_divided(matrix, div):
         ZeroDivisionError:
             - div is 0
     """
-    if not matrix:
-        raise TypeError("""matrix must be a matrix (list of lists)
-            of integers/floats""")
+    if not isinstance(matrix, list):
+        raise TypeError(
+            "matrix must be a matrix (list of lists) of"
+            " integers/floats")
 
     if type(div) not in [int, float]:
         raise TypeError("div must be a number")
@@ -31,14 +32,15 @@ def matrix_divided(matrix, div):
         raise TypeError("Each row of the matrix must have the same size")
 
     result_matrix = []
-    for list in range(len(matrix)):
+    for row in range(len(matrix)):
         res = []
-        for number in range(len(matrix[list])):
-            if not isinstance(matrix[list][number], (int, float)):
-                raise TypeError("""matrix must be a matrix (list of lists) of
-                    integers/floats""")
+        for number in range(len(matrix[row])):
+            if not isinstance(matrix[row][number], (int, float)):
+                raise TypeError(
+                    "matrix must be a matrix (list of lists) of"
+                    " integers/floats")
             try:
-                result = round(matrix[list][number] / div, 2)
+                result = round(matrix[row][number] / div, 2)
                 res.append(result)
             except ZeroDivisionError:
                 raise ZeroDivisionError("division by zero")
